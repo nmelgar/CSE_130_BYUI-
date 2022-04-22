@@ -16,7 +16,7 @@
 #    From around 32 lines (without blanks and comments, it was reduced to 21)
 #    It was great to make it more straightforward and avoiding unnecessary repetitions.
 # 5. How long did it take for you to complete the assignment?
-#    It took me around 2 hours and 35 minutes
+#    Completing the readings, recording and everything it took me around 2 hours and 50 minutes.
 
 import random
 
