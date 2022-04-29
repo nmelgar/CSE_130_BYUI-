@@ -11,20 +11,28 @@ passwords = all_data['password']
 counter = 0
 id = 0
 
-for (username, password) in zip(usernames, passwords):
-    # full_user = (str(counter) + username + password)
-    full_user = usernames[counter] + passwords[counter]
-    counter += 1
-    print(full_user)
-
 user_input = input("Username: ")
 password_input = input("Password: ")
 inputs = str(user_input + password_input)
 
-if inputs == full_user:
-    print("Authenticated")
+for (username, password) in zip(usernames, passwords):
+    full_user = (str(counter) + username + password)
+    full_user = usernames[counter] + passwords[counter]
+    counter += 1
+
+if user_input in usernames:
+    print("Correct username")
+    if password_input in passwords:
+        print("Correct Password")
+        if inputs == full_user:
+            print("Authenticated")
+        else:
+            print("Error Auth")
+    else:
+        print("Wrong password")
+        
 else:
-    print("Error authenticating")
+    print("Username doesnt exist")
 
 # print(usernames[0])
 # print(passwords[0])
