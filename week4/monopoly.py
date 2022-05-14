@@ -1,3 +1,27 @@
+# 1. Name:
+#      Nefi Melgar
+# 2. Assignment Name:
+#      Lab 04: Monopoly
+# 3. Assignment Description:
+#      The purpose of the program is to inform the user if he or she is able
+#      to build a hotel on Pennsylvania Avenue
+# 4. What was the hardest part? Be as specific as possible.
+#      I had different issues. Despite of having the flowchart, it was a little harder
+#      to correctly organize the code to match the design.
+#      It took me a good amount of time to think in the most efficient solution
+#      while using my current skills, I'm not sure if using just if/elses was the best
+#      solution, maybe using jump tables would be more efficient due of the amount of
+#      possible scenarios. I tried to avoid repeating as much code as I can, but at many
+#      parts it was not possible because of the different possibilities.
+#      I tried to reduce the amount of questions for the user to easily reach the purpose
+#      of the program.
+#      It seems that I wasn't really able to check the test cases as the specifications said
+#      because my design isn't the same, that's why I had a hard time while testing it, I tried
+#      to test it as the instructions said but adapted to the variations I did. The expected
+#      results are reached so, I don't know if that's right or wrong. 
+# 5. How long did it take for you to complete the assignment?
+#      It took me around 6 hours to complete the reading and the assignment.
+
 out_no_properties = "You cannot purchase a hotel until you own all the properties of a given color group."
 out_no_cash = "You do not have sufficient funds to purchase a hotel at this time."
 out_no_houses_avaiable = "There are not enough houses available for purchase at this time."
