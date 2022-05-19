@@ -1,0 +1,8 @@
+ship_level <- 2
+ship_points <- 200
+been_at_level <- 1
+
+IF ship_level == level 2 and ship_points == 200 and been_at_level_2 >= 1 minute
+    PUT display message "ship advances to level three"
+ELSE
+    WRITE the ship is not able to advance to level three

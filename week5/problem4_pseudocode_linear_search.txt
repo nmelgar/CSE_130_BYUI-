@@ -1,0 +1,8 @@
+list _of_elements <- [1, 2, 3, 4, 5]
+search_value <- 3
+
+FOR value_in_array in list_of_elements
+    IF search_value == value_in_array
+        PUT display message "found"
+    ELSE
+        PUT display message "not found"
