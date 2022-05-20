@@ -1,0 +1,6 @@
+READ file into data_text
+data_JSON <- data_Text
+
+name <- GET prompt user for name
+password <- GET prompt user for password
+

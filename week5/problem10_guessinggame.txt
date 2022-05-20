@@ -1,0 +1,24 @@
+range <- GET users input for range
+
+value <- assign random number between 1 and range
+
+run <- True
+
+WHILE run: 
+    user_guess <- GET prompt the user to guess the value
+
+    IF user_guess == range:
+        WRITE add guess to gusses
+        PUT display number of guesses
+        run == False
+
+    ELSE IF user_guess > range:
+        PUT display too high
+        WRITE add guess to gusses
+
+    ELSE IF user_guess < range:
+        PUT display too low
+        WRITE add guess to gusses
+
+    ELSE:
+        PUT please write a valid number
