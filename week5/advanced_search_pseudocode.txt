@@ -1,0 +1,20 @@
+PROMPT for a file containing a collection of words
+data_JSON <- data_text
+search_word <- GET word to search for
+
+advanced_search(data_JSON, data_JSON.length, search_word):
+    low_index <- low index in the collection
+    high_index <- high index in the collection
+
+    WHILE low_index <= high_index:
+        mid_index <- use the formula (low_index + high_index) / 2
+        IF index(search_word) == data_JSON[mid_index]
+            return mid_index
+            PUT the search_word exists in the list
+        ELIF index(search_word) > data_JSON[mid_index]
+		  low_index = mid_index + 1
+        ELSE
+            high_index = mid_index – 1
+
+    PUT the search_word doesn't exist in the list
+
