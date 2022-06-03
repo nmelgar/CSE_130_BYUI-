@@ -1,0 +1,9 @@
+PROMPT for filename
+GET filename
+
+OPEN file
+words_text <- READ file
+word_json <- json.load(words_text)
+words_list <- words_json['array']
+
+pivot <- words_list[-1]
