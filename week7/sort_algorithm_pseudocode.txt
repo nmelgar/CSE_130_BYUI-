@@ -6,4 +6,17 @@ words_text <- READ file
 word_json <- json.load(words_text)
 words_list <- words_json['array']
 
-pivot <- words_list[-1]
+minus <- -1
+i_pivot <- words_list[minus]
+i_largest = 0
+
+for i_check in words_list:
+    if i_check > i_largest:
+        i_largest = i_check
+        if i_largest > i_pivot:
+            index1 = words_list.index(i_largest)
+            index2 = words_list.index(i_pivot)
+            index1, index2 = index2, index1
+        minus = minus -1
+
+PUT words_list
