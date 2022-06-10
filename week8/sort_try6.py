@@ -5,8 +5,9 @@ def swapPositions(list, pos1, pos2):
 
 
 # array1 = [31, 72, 10, 32, 18, 95, 25, 50]
-array1 = [19, 13, 29, 76, 19, 77, 99, 12, 5, 25, 19]
+# array1 = [19, 13, 29, 76, 19, 77, 99, 12, 5, 25, 19]
 # array1 = ["a", "c", "f", "h", "d", "t", "n", "d"]
+array1 = ["hola", "adios", "yes", "gato", "celular"]
 
 minus = -1
 # i_pivot = array1[minus]
