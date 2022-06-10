@@ -31,7 +31,13 @@ def sortFunction(list):
     -list: the list that will hold the elements
     """
     minus = -1
+
+    # This will check that minus starts at -1, so it can decrease
+    assert minus == -1, "minus variable should start at -1"
+
     for i in range(len(list)):
+
+
         i_largest = list[0]
         for i_check in list[0:len(list) - i]:
             i_pivot = list[minus]
@@ -46,7 +52,22 @@ def sortFunction(list):
 
 try:
     # get the json file
-    filename = 'languages.json'
+    # filename = 'languages.json'
+    
+    #empty list
+    # filename = 'Lab08.empty.json'
+    
+    #list with one element
+    # filename = 'Lab08.trivial.json'
+
+    #small list
+    # filename = 'Lab08.languages.json'
+    
+    #medium list
+    # filename = 'Lab08.states.json'
+    
+    #large list
+    filename = 'Lab08.cities.json'
 
     # open the file with the variable data_source
     with open(filename) as data_source:
@@ -54,6 +75,9 @@ try:
 
      # use for the array
     languages = all_data['array']
+    
+    # this will check that the length of the list is > than 0
+    assert len(languages) > 0, "List length should be greater than 0"
 
     # call the main function
     if __name__ == "__main__":
