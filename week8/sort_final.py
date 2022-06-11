@@ -2,7 +2,7 @@ import json
 
 
 def main():
-    print("The values in languages.json are:\n")
+    print(f"The values in {filename} are:\n")
     sorted = sortFunction(languages)
     for sort_element in sorted:
         print(sort_element)
@@ -11,9 +11,11 @@ def main():
 def swapPositions(list, pos1, pos2):
     """This function will swap the position of two elements in
     a list.
-    Takes in 3 parameters:
-    -list: array that contains the elements
-    -pos1: position of the first elemement to be changed
+    Takes in 3 parameters: It took me more than 12 hours to complete the algorithm. I did many different tries. I asked
+#      one of my brothers who is very smart for help when I was really frustrated of not getting the
+#      expected results he helped me and we worked together until getting it. After it I worked again
+#      to get it done by myself. At the end it worked, it was a great experience but a little
+#      frustrating after trying and tring without the right result.ed
     -pos2: positions of the second element to be changed
     Returns: the list with the elements in their new position.
     """
@@ -37,7 +39,6 @@ def sortFunction(list):
 
     for i in range(len(list)):
 
-
         i_largest = list[0]
         for i_check in list[0:len(list) - i]:
             i_pivot = list[minus]
@@ -53,21 +54,21 @@ def sortFunction(list):
 try:
     # get the json file
     # filename = 'languages.json'
-    
-    #empty list
+
+    # empty list
     # filename = 'Lab08.empty.json'
-    
-    #list with one element
+
+    # list with one element
     # filename = 'Lab08.trivial.json'
 
-    #small list
-    # filename = 'Lab08.languages.json'
-    
-    #medium list
+    # small list
+    filename = 'Lab08.languages.json'
+
+    # medium list
     # filename = 'Lab08.states.json'
-    
-    #large list
-    filename = 'Lab08.cities.json'
+
+    # large list
+    # filename = 'Lab08.cities.json'
 
     # open the file with the variable data_source
     with open(filename) as data_source:
@@ -75,7 +76,7 @@ try:
 
      # use for the array
     languages = all_data['array']
-    
+
     # this will check that the length of the list is > than 0
     assert len(languages) > 0, "List length should be greater than 0"
 
