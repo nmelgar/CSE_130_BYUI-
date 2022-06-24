@@ -3,7 +3,7 @@
 # n2 = 1
 array1 = [2, 1]
 
-for x in range(100):
+for x in range(100 - 2):
     n1 = array1[x]
     n2 = array1[x + 1]
     
