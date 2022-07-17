@@ -1,4 +1,7 @@
-n = 20
+print("This program will find all the prime numbers at or below N.")
+n = int(input("Select that N: "))
+#this would be a nice assert if using functions
+# assert isinstance(n, int), "Please enter a valid integer"
 assert n > 1, "N must be greater than 1"
 
 check_range = range(2, n + 1)
