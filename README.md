@@ -1,4 +1,4 @@
-# CSE_130_BYUI
+# Algorithm Design
 <hr>
 <h3>Overview</h3>
 <hr>
